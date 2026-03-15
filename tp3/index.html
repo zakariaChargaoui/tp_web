@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - MonSite</title>
+    <meta name="description" content="Site web multi-pages responsive avec HTML5 et CSS3">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MonSite - Accueil">
+    <meta property="og:description" content="Site web multi-pages responsive avec HTML5 et CSS3">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://monsite.com">
+    <meta property="og:image" content="https://monsite.com/images/og-image.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="pages/about.html">À propos</a></li>
+                <li><a href="pages/services.html">Services</a></li>
+                <li><a href="pages/gallery.html">Galerie</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Image Responsive -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Hero image" loading="lazy">
+            <div class="hero-content">
+                <h1>Bienvenue sur MonSite</h1>
+                <p>Découvrez nos services et notre expertise</p>
+                <a href="pages/services.html" class="btn">Nos services</a>
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section>
+            <h2 class="section-title">Nos Services</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Service 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                    <a href="pages/services.html" class="btn">En savoir plus</a>
+                </div>
+                <div class="card">
+                    <h3>Service 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                    <a href="pages/services.html" class="btn">En savoir plus</a>
+                </div>
+                <div class="card">
+                    <h3>Service 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                    <a href="pages/services.html" class="btn">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Témoignages -->
+        <section>
+            <h2 class="section-title">Témoignages</h2>
+            <div class="card-container">
+                <div class="card">
+                    <p>"Excellent service, je recommande vivement !"</p>
+                    <p><strong>- Jean Dupont</strong></p>
+                </div>
+                <div class="card">
+                    <p>"Une équipe professionnelle et à l'écoute."</p>
+                    <p><strong>- Marie Martin</strong></p>
+                </div>
+                <div class="card">
+                    <p>"Des résultats au-delà de mes attentes."</p>
+                    <p><strong>- Pierre Durand</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vidéo de présentation -->
+        <section>
+            <h2 class="section-title">Vidéo de présentation</h2>
+            <div class="video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="images/presentation-video.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+        </section>
+
+        <!-- Tableau des tarifs avec colspan/rowspan -->
+        <section>
+            <h2 class="section-title">Tarifs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Basique</th>
+                        <th>Standard</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Service 1</th>
+                        <td>500 MAD</td>
+                        <td>1000 MAD</td>
+                        <td>1500 MAD</td>
+                    </tr>
+                    <tr>
+                        <th>Service 2</th>
+                        <td>750 MAD</td>
+                        <td>1250 MAD</td>
+                        <td>2000 MAD</td>
+                    </tr>
+                    <tr>
+                        <th>Service 3</th>
+                        <td colspan="2">Sur devis</td>
+                        <td>3000 MAD</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Pack complet</th>
+                        <td colspan="3">Contactez-nous pour un devis personnalisé</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Remise de 10% sur l'abonnement annuel</td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+    </main>
+
+    <footer>
+        <!-- Footer adapté pour le Maroc -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Plan du site</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Mentions légales</h3>
+                <ul>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@monsite.ma</p>
+                <p>Tél: +212 6 12 34 56 78</p>
+                <p>12 Avenue Mohammed V, Casablanca, Maroc</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MonSite. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

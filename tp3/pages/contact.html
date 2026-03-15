@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MonSite</title>
+    <meta name="description" content="Contactez-nous via notre formulaire">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="section-title">Contactez-nous</h1>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            <!-- Formulaire de contact -->
+            <div>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nom">Nom complet *</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Date de rendez-vous souhaitée</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service souhaité</label>
+                        <select id="service" name="service">
+                            <option value="">Choisissez un service</option>
+                            <option value="service1">Service 1</option>
+                            <option value="service2">Service 2</option>
+                            <option value="service3">Service 3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Comment nous avez-vous connu ?</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="source" value="internet"> Internet
+                            </label>
+                            <label>
+                                <input type="radio" name="source" value="bouche"> Bouche à oreille
+                            </label>
+                            <label>
+                                <input type="radio" name="source" value="reseau"> Réseaux sociaux
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Préférences de contact</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="contact_email" value="email"> Email
+                            </label>
+                            <label>
+                                <input type="checkbox" name="contact_phone" value="phone"> Téléphone
+                            </label>
+                            <label>
+                                <input type="checkbox" name="contact_sms" value="sms"> SMS
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fichier">Joindre un fichier</label>
+                        <input type="file" id="fichier" name="fichier" accept=".pdf,.doc,.docx">
+                    </div>
+
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+
+            <!-- Informations de contact et carte -->
+            <div>
+                <div class="contact-info">
+                    <h3>Nos coordonnées</h3>
+                    <p><strong>Adresse :</strong> 12 Avenue Mohammed V, Casablanca, Maroc</p>
+                    <p><strong>Téléphone :</strong> +212 6 12 34 56 78</p>
+                    <p><strong>Email :</strong> contact@monsite.ma</p>
+                    <p><strong>Horaires :</strong> Lun-Ven 9h-18h</p>
+                </div>
+
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-7.636719%2C33.5588%2C-7.5900%2C33.6000&layer=mapnik&marker=33.5794%2C-7.6134" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer adapté pour le Maroc -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Plan du site</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Mentions légales</h3>
+                <ul>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@monsite.ma</p>
+                <p>Tél: +212 6 12 34 56 78</p>
+                <p>12 Avenue Mohammed V, Casablanca, Maroc</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MonSite. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

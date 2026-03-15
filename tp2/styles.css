@@ -1,0 +1,175 @@
+    /* === RESET & STYLES DE BASE === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+      color: #1e2b37;
+    }
+
+    .form-container {
+      max-width: 800px;
+      width: 100%;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: #1e3c5a;
+      margin-bottom: 0.25rem;
+    }
+
+    .sous-titre {
+      color: #5f6c7a;
+      margin-bottom: 2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    /* === CHAMPS DU FORMULAIRE === */
+    fieldset {
+      border: 1px solid #dde3ea;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    legend {
+      font-weight: 600;
+      color: #1e3c5a;
+      padding: 0 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .groupe {
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    label {
+      width: 140px;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    /* champs texte et selects */
+    input, select, textarea {
+      flex: 1 1 250px;
+      padding: 0.7rem 1rem;
+      border: 1px solid #cbd5e0;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      background: white;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #3b7fc9;
+      box-shadow: 0 0 0 3px rgba(59, 127, 201, 0.1);
+    }
+
+    /* petits écrans : empiler */
+    @media (max-width: 600px) {
+      label {
+        width: 100%;
+      }
+      input, select, textarea {
+        flex: 1 1 100%;
+      }
+    }
+
+    /* radio / checkbox en ligne */
+    .options {
+      flex: 1 1 250px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .options label {
+      width: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-weight: normal;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      flex: 0 0 auto;
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+
+    /* astérisque pour obligatoire */
+    .required {
+      color: #c0392b;
+      margin-left: 2px;
+    }
+
+    /* messages d'erreur personnalisés : via title + style natif */
+    /* on ajoute une indication subtile */
+    .hint {
+      font-size: 0.8rem;
+      color: #5f6c7a;
+      margin-left: 146px;
+      margin-top: 0.2rem;
+    }
+    @media (max-width: 600px) {
+      .hint { margin-left: 0; }
+    }
+
+    /* bloc CGU */
+    .cgu-box {
+      background: #f8fafc;
+      border-radius: 8px;
+      padding: 1.2rem;
+      margin: 1.5rem 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .cgu-box label {
+      width: auto;
+      flex: 1;
+      font-weight: normal;
+    }
+
+    button {
+      background: #1e3c5a;
+      color: white;
+      border: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding: 0.9rem 1.5rem;
+      border-radius: 40px;
+      width: 100%;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #2b4e72;
+    }
+
+    /* simple design, pas d'effets exubérants */
+    hr {
+      border: none;
+      border-top: 1px solid #e2e8f0;
+      margin: 1rem 0;
+    }
