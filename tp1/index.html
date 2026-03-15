@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakaria Chargaoui · Portfolio & CV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <!-- HEADER avec navigation sticky -->
+  <header class="page-header">
+    <div class="header-titles">
+      <h1>Zakaria Chargaoui</h1>
+      <div class="subtitle">Étudiant en Ingénierie Informatique</div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN : contenu principal -->
+  <main>
+    <!-- SECTION À PROPOS -->
+    <section id="a-propos">
+      <h2>À propos</h2>
+      <div class="apropos-grid">
+        <div class="photo-profil">
+          <!-- placeholder image factice (générée via ui-avatars mais avec alt) -->
+          <img src="./imgs/zakaria_img.png" 
+               alt="Avatar de profil - Sophie Martin">
+        </div>
+        <div class="bio">
+<p>Développeur passionné par l’informatique et la création d’applications web modernes. Actuellement étudiant en informatique, je développe régulièrement des projets pour renforcer mes compétences en développement logiciel et en technologies web. J’utilise des outils comme HTML, CSS, JavaScript, React et Laravel pour concevoir des interfaces efficaces et responsives, tout en travaillant également avec des langages comme Python, Java et C/C++. Curieux, rigoureux et motivé, je cherche constamment à améliorer mes compétences techniques et à relever de nouveaux défis dans le domaine du développement.</p>        </div>
+      </div>
+    </section>
+
+    <!-- SECTION COMPÉTENCES -->
+    <section id="competences">
+      <h2>Compétences</h2>
+      <ul class="skills-list">
+        <li>HTML5 / CSS3 (avancé)</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Python</li>
+        <li>C / C++ (bases solides)</li>
+        <li>SQL (MySQL, SQLite)</li>
+        <li>Développement Web responsive</li>
+        <li>React</li>
+        <li>Php / Laravel</li>
+        <li>Git & GitHub</li>
+        <li>Java</li>
+      </ul>
+    </section>
+
+    <!-- SECTION FORMATIONS (tableau) -->
+    <section id="formations">
+      <h2>Formations</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Année</th><th>Diplôme</th><th>Établissement</th></tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>2023</td>
+              <td>Baccalauréat Général — Sciences Mathématiques</td>
+              <td>Assa / Zag</td>
+            </tr>
+              
+            <tr>
+              <td>2023 – 2025</td>
+              <td>DEUG en Informatique (2e année)</td>
+              <td>Faculté des Sciences Semlalia – Marrakech</td>
+            </tr>
+            
+            <tr>
+              <td>2025 – 2028</td>
+              <td>Cycle d’ingénierie en Informatique — Big Data & Cloud Computing</td>
+              <td>ENSET Mohammedia</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION EXPÉRIENCES (tableau) -->
+    <section id="experiences">
+      <h2>Expériences & projets</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Année</th><th>Poste / Projet</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+<tr>
+  <td>2025</td>
+  <td>Projet : site e-commerce</td>
+  <td>Conception et développement d'une plateforme e-commerce avec gestion des produits, panier d'achat et interface responsive en HTML, CSS, JavaScript et Laravel.</td>
+</tr>
+
+        <tr>
+          <td>2025</td>
+          <td>Applications Web interactives</td>
+          <td>Développement d'applications web comme un chatbot et une application de messagerie en temps réel utilisant JavaScript et des technologies backend.</td>
+        </tr>
+
+        <tr>
+          <td>2024 – 2025</td>
+          <td>Jeu de vélo en C++</td>
+          <td>Création d'un jeu 2D de vélo avec génération de terrain et gestion de la physique en C++ en utilisant des bibliothèques graphiques.</td>
+        </tr>
+
+        <tr>
+          <td>2025</td>
+          <td>Mini-applications React</td>
+          <td>Développement de plusieurs applications avec React : jeu Memory Card, gestion de panier (Cart), Todo App et outil de recherche de profils GitHub via API.</td>
+        </tr>
+
+        <tr>
+          <td>2025</td>
+          <td>Système de conception UML</td>
+          <td>Développement d'un outil permettant de créer et dessiner des diagrammes UML pour la modélisation de systèmes logiciels.</td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT (liens externes) -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="#" class="contact-card" target="_blank" rel="noopener"><i>🔗</i> LinkedIn</a>
+        <a href="#" class="contact-card" target="_blank" rel="noopener"><i>🐙</i> GitHub</a>
+        <a href="mailto:chargaoui2001@gmail.com" class="contact-card" target="_blank" rel="noopener"><i>📧</i> chargaoui2001@gmail.com</a>
+      </div>
+      <!-- petits liens additionnels (respect structure) mais déjà 3 réseaux -->
+      <p style="text-align: center; margin-top: 1rem; opacity: 0.7;">📱 aussi sur Discord & Twitter (liens privés)</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    © 2026 Zakaria Chargaoui · Portfolio personnel
+  </footer>
+</div>
+<!-- fin container -->
+
+<!-- tous les liens externes sont ok : target _blank + rel noopener -->
+<!-- photo avec alt, tableaux, grid/flex, media queries intégrées -->
+</body>
+</html>
